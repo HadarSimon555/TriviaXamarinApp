@@ -32,7 +32,7 @@ namespace TriviaXamarinApp.ViewModels
 
             if (u != null)
             {
-               App.Current.MainPage= new  
+               //App.Current.MainPage= new  
             }
             else
             {

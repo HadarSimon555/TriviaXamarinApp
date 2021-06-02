@@ -12,13 +12,13 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
             <Button  Grid.Row="0" Command="{Binding NavigateToPageCommand}" CommandParameter="Register" Text="Register" HorizontalOptions="Center"/>
