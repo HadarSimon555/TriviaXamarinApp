@@ -22,7 +22,8 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Entry Grid.Row="0" Text="{Binding Email}"  Placeholder="E-Mail" FontSize="Medium"/>
+            
+            <Entry Grid.Row="0" Text="{Binding Email}"  Placeholder="Email"/>
             <Entry Grid.Row="1" Text="{Binding UserName}" Placeholder="UserName"/>
             <Entry Grid.Row="2" Text="{Binding Password}" Placeholder="Password" IsPassword="True"/>
             <Button Grid.Row="3" Command="{Binding RegisterCommand}"  Text="Register" HorizontalOptions="Center"/>
