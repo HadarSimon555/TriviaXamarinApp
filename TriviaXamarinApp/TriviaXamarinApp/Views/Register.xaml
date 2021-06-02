@@ -6,10 +6,31 @@
              mc:Ignorable="d"
              x:Class="TriviaXamarinApp.Views.Register">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Entry Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0"
+                Placeholder="User name"/>
+
+            <Entry Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"
+                Placeholder="Password"/>
+
+            <Entry Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2"
+                Placeholder="Email"/>
+
+
+            <Button Grid.Row="3" Grid.Column="0" Text="Save"/>
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
