@@ -5,6 +5,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using TriviaXamarinApp.Services;
 using TriviaXamarinApp.Models;
+using TriviaXamarinApp.Views;
 
 namespace TriviaXamarinApp.ViewModels
 {
@@ -35,11 +36,10 @@ namespace TriviaXamarinApp.ViewModels
 
             if(res)
             {
-
-            }
-            else
-            {
-
+                Play p = new Play();
+                p.Title = "Game";
+                p.BindingContext = new PlayViewModel();
+                await Application.Current.MainPage.Navigation.PushAsync(p);
             }
         }
     }

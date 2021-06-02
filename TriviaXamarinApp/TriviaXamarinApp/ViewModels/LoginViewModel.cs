@@ -5,6 +5,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using TriviaXamarinApp.Services;
 using TriviaXamarinApp.Models;
+using TriviaXamarinApp.Views;
 
 namespace TriviaXamarinApp.ViewModels
 {
@@ -32,12 +33,10 @@ namespace TriviaXamarinApp.ViewModels
 
             if (u != null)
             {
-                Application.Current.MainPage.Navigation.PushAsync(new QuestionManagerViewModel());
-                //App.Current.MainPage= new  
-            }
-            else
-            {
-
+                Page p = new QuestionManager();
+                p.Title = "QuestionManager";
+                p.BindingContext = new QuestionManagerViewModel();
+                await Application.Current.MainPage.Navigation.PushAsync(p);
             }
         }
     }

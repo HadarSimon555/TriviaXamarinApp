@@ -10,7 +10,7 @@ namespace TriviaXamarinApp.ViewModels
     class QuestionManagerViewModel
     {
         public ICommand NavigateToPageCommand { get; set; }
-        public QuestionManager()
+        public QuestionManagerViewModel()
         {
             NavigateToPageCommand = new Command<string>(NavigateToPage);
         }
