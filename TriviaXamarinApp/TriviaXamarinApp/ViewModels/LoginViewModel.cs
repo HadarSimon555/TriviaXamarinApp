@@ -29,6 +29,15 @@ namespace TriviaXamarinApp.ViewModels
         {
             TriviaWebAPIProxy proxy = TriviaWebAPIProxy.CreateProxy();
             User u = await proxy.LoginAsync(Email, Password);
+
+            if (u != null)
+            {
+               App.Current.MainPage= new  
+            }
+            else
+            {
+
+            }
         }
     }
 }

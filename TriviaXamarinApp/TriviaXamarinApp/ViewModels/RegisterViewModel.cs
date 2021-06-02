@@ -32,6 +32,15 @@ namespace TriviaXamarinApp.ViewModels
             TriviaWebAPIProxy proxy = TriviaWebAPIProxy.CreateProxy();
             User u = new User { Email = Email, NickName = UserName, Password = Password };
             bool res = await proxy.RegisterUser(u);
+
+            if(res)
+            {
+
+            }
+            else
+            {
+
+            }
         }
     }
 }
