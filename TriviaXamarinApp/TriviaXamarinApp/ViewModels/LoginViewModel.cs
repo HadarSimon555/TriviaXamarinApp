@@ -32,7 +32,8 @@ namespace TriviaXamarinApp.ViewModels
 
             if (u != null)
             {
-               //App.Current.MainPage= new  
+                Application.Current.MainPage.Navigation.PushAsync(new QuestionManagerViewModel());
+                //App.Current.MainPage= new  
             }
             else
             {

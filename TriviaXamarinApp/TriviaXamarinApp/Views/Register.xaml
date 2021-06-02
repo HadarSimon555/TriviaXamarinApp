@@ -28,8 +28,5 @@
             <Entry Grid.Row="2" Text="{Binding Password}" Placeholder="Password" IsPassword="True"/>
             <Button Grid.Row="3" Command="{Binding RegisterCommand}"  Text="Register" HorizontalOptions="Center"/>
         </Grid>
-
-
-
     </ContentPage.Content>
 </ContentPage>

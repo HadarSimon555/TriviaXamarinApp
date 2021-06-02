@@ -46,8 +46,6 @@ namespace TriviaXamarinApp.ViewModels
 
             }
             Application.Current.MainPage.Navigation.PushAsync(p);
-
-
         }
     }
 }
